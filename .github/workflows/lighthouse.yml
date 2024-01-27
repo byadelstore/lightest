@@ -1,3 +1,5 @@
+// lighthouse.yml
+
 name: Lighthouse Audit
 
 on:
@@ -23,4 +25,4 @@ jobs:
         run: npm install
 
       - name: Run Lighthouse
-        run: npm run lighthouse
+        run: npm run lhci
