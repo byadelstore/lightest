@@ -1,0 +1,26 @@
+name: Lighthouse Audit
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lighthouse:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.11.0
+          check-latest: true
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Lighthouse
+        run: npm run lighthouse
