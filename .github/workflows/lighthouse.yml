@@ -29,3 +29,5 @@ jobs:
         
       - name: Display Lighthouse report
         run: npx lhci upload
+      - name: Display Lighthouse report
+        run: type .\lighthouse-report.json
