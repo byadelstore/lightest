@@ -26,5 +26,6 @@ jobs:
 
       - name: Run Lighthouse
         run: npm run lhci
+        
       - name: Display Lighthouse report
-        run: cat lighthouse-report.json
+        run: npx lhci upload
