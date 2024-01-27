@@ -5,14 +5,16 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "lighthouse": "npx lighthouse https://www.flashscore.com/ --output html --output-path=report.html",
+    "lhci": "lhci autorun --url=https://www.flashscore.com/",
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "lighthouse": "^11.5.0"
+  },
+  "dependencies": {
+    "lhci": "^4.1.1"
   }
 }
