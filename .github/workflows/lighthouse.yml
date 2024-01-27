@@ -27,5 +27,8 @@ jobs:
       - name: Run Lighthouse
         run: npm run lhci
         
-      - name: Display Lighthouse report
-        run: npx lhci upload
+      - name: Archive Lighthouse Reports
+        uses: actions/upload-artifact@v2
+        with:
+          name: lighthouse-reports
+          path: .lighthouseci
